@@ -1,19 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odin Recipes</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Odin Recipes Landing Page</title>
+  <link 
+href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" 
+rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Odin Recipes</h1>
-    <ul>
-    <li><a href="recipes/fried-rice.html">Fried Rice</a></li>
-    <li><a href="recipes/pasta.html">Pasta</a></li>
-    <li><a href="recipes/paneer-butter-masala.html">Paneer Butter 
-Masala</a></li>
-</ul>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+	<img src="Odin.png" alt="Odin Recipes Logo" />
+    </div>
+    <nav class="nav-links">
+      <a 
+href="https://samgomes7125.github.io/odin-recipes/recipes/fried-rice.html" 
+target="_blank">Fried Rice</a>
+      <a 
+href="https://samgomes7125.github.io/odin-recipes/recipes/pasta.html" 
+target="_blank">Pasta</a>
+      <a 
+href="https://samgomes7125.github.io/odin-recipes/recipes/paneer-butter-masala.html" 
+target="_blank">Paneer Butter Masala</a>
+    </nav>
+  </header>
+  <main>
+  <!-- Section 1: About -->
+  <section class="about">
+    <div class="about-text">
+      <h1>Welcome to Odin Recipes</h1>
+      <p>Discover delicious homemade recipes that are simple, flavorful, 
+and inspired by global cuisine. Explore easy guides and step-by-step 
+instructions to make your cooking journey joyful.</p>
+      <button class="signup-btn">Get Started</button>
+    </div>
+    <div class="about-image">
+      <img src="food-recipes.png" alt="Delicious food" />
+    </div>
+  </section>
+
+  <!-- Section 2: Recipe Highlights -->
+  <section class="recipes">
+    <h2>Featured Recipes</h2>
+    <div class="recipe-cards">
+      <div class="recipe-card">
+        <img src="fried-rice.jpg" alt="Fried Rice" />
+	<h3><a 
+href="https://samgomes7125.github.io/odin-recipes/recipes/fried-rice.html" 
+target="_blank">Fried Rice</a></h3>
+      </div>
+      <div class="recipe-card">
+	<img src="pasta.jpg" alt="Pasta" />
+      <h3><a 
+href="https://samgomes7125.github.io/odin-recipes/recipes/pasta.html" 
+target="_blank">Pasta</a></h3>
+      </div>
+	<div class="recipe-card">
+      <img src="paneer-butter-masala.jpg" alt="Paneer Butter Masala" />
+      <h3><a 
+href="https://samgomes7125.github.io/odin-recipes/recipes/paneer-butter-masala.html" 
+target="_blank">Paneer Butter Masala</a></h3>
+    </div>
+   </div>
+  </section>
+
+  <!-- Section 3: Quote -->
+  <section class="quote">
+    <blockquote>"Cooking is like love. It should be entered into with 
+abandon or not at all." – Harriet Van Horne</blockquote>
+  </section>
+
+  <!-- Section 4: Email Signup -->
+  <section class="email-signup">
+    <h2>Get New Recipes Every Week</h2>
+    <p>Sign up with your email to receive our latest recipes and cooking 
+tips!</p>
+    <form>
+      <input type="email" placeholder="Enter your email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+  <main>  
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Odin Recipes. All rights reserved.</p>
+  </footer>
 </body>
 </html>
-
