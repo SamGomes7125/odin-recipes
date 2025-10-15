@@ -1,69 +1,208 @@
-/* ===== Basic Page Styling ===== */
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #faf9f6;
-  color: #333;
+/* ===== General Reset ===== */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Base Styles ===== */
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #fff8e1; /* warm pale yellow background */
+  color: #3e2723; /* deep brown text */
 }
 
 /* ===== Header ===== */
-h1 {
-  text-align: center;
-  color: #d35400;
-  background-color: #ffe6cc;
-  padding: 20px;
-  border-bottom: 2px solid #d35400;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6d4c41; /* rich brown header */
+  color: #f9faf8;
+  padding: 1rem 2rem;
 }
 
-/* ===== Links ===== */
-a {
-  color: #007acc;
+header img {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 3.5rem;
+}
+
+nav a {
+  color: #f9faf8;
   text-decoration: none;
-  font-weight: bold;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
-a:hover {
-  color: #005999;
-  text-decoration: underline;
+nav a:hover {
+  color: #ffe0b2;
 }
 
-/* ===== Recipe List on Index ===== */
-ul {
-  list-style-type: none;
-  text-align: center;
-  padding: 0;
+/* ===== Section 1: About ===== */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 2rem;
+  background-color: #ffecb3; /* soft yellow */
+  flex-wrap: wrap;
 }
 
-ul li {
-  margin: 10px 0;
-}
-
-/* ===== Recipe Page Layout ===== */
-img {
-  display: block;
-  margin: 20px auto;
+.about img {
+  width: 85%;
   border-radius: 10px;
-  max-width: 400px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
-  color: #b7410e;
-  border-bottom: 2px solid #b7410e;
-  padding-bottom: 5px;
+.about-text {
+  width: 50%;
+  max-width: 500px;
 }
 
-p, li {
-  line-height: 1.6;
-  margin: 8px 0;
+.about h1 {
+  font-size: 48px;
+  font-weight: 900;
+  color: #5d4037; /* dark chocolate tone */
+  margin-bottom: 1rem;
 }
 
-/* ===== Back Link Styling ===== */
-.back-link {
-  display: block;
+.about p {
+  margin-bottom: 1.5rem;
+  font-size: 18px;
+  color: #4e342e;
+}
+
+.about button {
+  background-color: #ff9800; /* warm orange call-to-action */
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.about button:hover {
+  background-color: #f57c00;
+}
+
+/* ===== Section 2: Recipes ===== */
+.recipes {
+  padding: 3rem 2rem;
   text-align: center;
-  margin: 30px 0;
-  color: #444;
+  background-color: #fff3e0;
 }
 
+.recipes h2 {
+  font-size: 36px;
+  font-weight: 900;
+  color: #5d4037;
+  margin-bottom: 2rem;
+}
+
+.recipe-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.recipe-card {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px);
+}
+
+.recipe-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.recipe-card h3 {
+  margin-top: 1rem;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.recipe-card a {
+  text-decoration: none;
+  color: #ff9800;
+  transition: color 0.3s;
+}
+
+.recipe-card a:hover {
+  color: #e65100;
+}
+
+/* ===== Section 3: Quote ===== */
+.quote {
+  background-color: #ffe0b2;
+  text-align: center;
+  padding: 3rem 2rem;
+  font-style: italic;
+  font-size: 36px;
+  font-weight: 300;
+  color: #4e342e;
+}
+
+/* ===== Section 4: Signup ===== */
+.signup {
+  text-align: center;
+  padding: 3rem 2rem;
+  background-color: #ffecb3;
+}
+
+.signup h2 {
+  color: #5d4037;
+  font-size: 36px;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+.signup input[type="email"] {
+  padding: 0.75rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 250px;
+  margin-right: 0.5rem;
+}
+
+.signup button {
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.signup button:hover {
+  background-color: #f57c00;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  background-color: #6d4c41;
+  color: #f9faf8;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
